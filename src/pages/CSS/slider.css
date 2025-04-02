@@ -1,0 +1,50 @@
+
+.slider-container {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100px; /* Full viewport height */
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: rgb(7, 2, 60); /* Optional: Black background for better visibility */
+  }
+  
+  /* Full-screen image styling */
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-image {
+    width: 100vw; /* Full viewport width */
+    height: 50vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image fills the screen without distortion */
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Position dots at the bottom */
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Dots Styling */
+  .dot {
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  

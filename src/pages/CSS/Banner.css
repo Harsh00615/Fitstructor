@@ -1,0 +1,22 @@
+.top {
+    background-color: #ff5a5a;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+  }
+  
+  .top span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
