@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     background: linear-gradient(45deg,#0F0D1F, #2A1B5C);
+    position: fixed;
 }
 .navbar-logo{
     display: flex;
