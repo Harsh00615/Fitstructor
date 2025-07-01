@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(45deg,#0F0D1F, #2A1B5C);
+    position: fixed;
+}
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    height: 50px;
+    padding-top: 20px;
+}
+.navbar-logo img {
+    height: 50px;
+    cursor: pointer;
+}
+.navbar-logo p {
+    font-size:30px;
+    font-weight:500;
+    font-family: "Lilita One", sans-serif;
+    color: #c2bfbf;
+    cursor: pointer;
+}
+.nav-logo-menu {
+    display: flex;
+    align-items: center;
+    color:#c2bfbf;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+.nav-logo-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #7d7777;
+}
+.nav-login-cart {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:45px;
+}
+.nav-login-cart {
+    cursor: pointer;
+}
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    margin:-35px 0 0 -55px;
+    text-align: center;
+    background-color:#ff5a5a;
+    color: white;
+    border-radius: 11px;
+    font-size:15px ;
+}
