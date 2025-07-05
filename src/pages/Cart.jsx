@@ -1,10 +1,23 @@
-import React from 'react'
-import { CartItems } from '../Components/CartItems/CartItems'
+// import React from 'react'
+// import { CartItems } from '../components/CartItems/CartItems'
 
-export const Cart = () => {
+// export const Cart = () => {
+//   return (
+//     <div>
+//       <CartItems/>
+//     </div>
+//   )
+// }
+import React from 'react';
+import CartItems from '../components/CartItems/CartItems';  // ✅ Remove curly braces
+
+const Cart = () => {
   return (
     <div>
-      <CartItems/>
+      <CartItems />
     </div>
-  )
-}
+  );
+};
+
+export default Cart;  // ✅ Export as default
+

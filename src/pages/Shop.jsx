@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from "../Components/Hero/Hero";
-import Popular from '../Components/Popular/Popular';
-import Offers from '../Components/Offers/offers';
-import NewCollection from '../Components/NewCollection/NewCollection';
-import NewsLetter from '../Components/NewsLetter/NewsLetter';
+import Hero from "../components/Hero/Hero";
+import Popular from '../components/Popular/Popular';
+import Offers from '../components/Offers/offers';
+import NewCollection from '../components/NewCollection/NewCollection';
+import NewsLetter from '../components/NewsLetter/NewsLetter';
 
 
 
