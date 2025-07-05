@@ -1,7 +1,7 @@
 import React from 'react';
-import "../Navbar/Navbar.css";
+import "./Navbar.css";
 import logo from "../Assets/Fitstructor.png";
-import {Shopp} from "../../shopp";
+import Shopp from "../../Shopp";
 import {Link} from "react-router-dom";
 import user from "../Assets/user.png";
 import cart from "../Assets/cart.png";

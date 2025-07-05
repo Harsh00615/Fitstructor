@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbarshop';
+import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import { Shop } from './Pages/Shop';
+import { Shop } from './pages/Shop';
 import { Cart } from './Pages/Cart';
 import { Product } from './Pages/product';
 
