@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(45deg, #0F0D1F, #2A1B5C);
+}
+
+.nav-logo {
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+.nav-logo img{
+    height: 90px;
+    cursor: pointer;
+}
+.nav-logo p {
+    font-size:30px;
+    font-weight:500;
+    font-family: "Lilita One", sans-serif;
+    color: #c2bfbf;
+    cursor: pointer;
+}
+.nav-logo-menu {
+    display: flex;
+    align-items: center;
+    color: #c2bfbf;
+    gap:50px;
+    list-style: none;
+}
+.nav-logo-menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    cursor: pointer;
+}
+.nav-logo-menu li a{
+    color: #c2bfbf;
+}
+.nav-logo-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #7D7777;
+}
+.nav-login-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:45px;
+}
+.nav-login-cart button {
+    width: 140px;
+    height: 48px;
+    outline: none;
+    border-radius: 75px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #ff4141;
+    color:#f3f3f3;
+    cursor: pointer;
+}
+.nav-login-cart button:active {
+    background-color: #f3f3f3;
+    color:#5c5c5c;
+}
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    margin:-35px 0 0 -55px;
+    text-align: center;
+    background-color: #ff5a5a;
+    color: white;
+    border-radius: 11px;
+    font-size:15px ;
+}
+.nav-login-cart img {
+    cursor: pointer;
+    height: 40px;
+}
