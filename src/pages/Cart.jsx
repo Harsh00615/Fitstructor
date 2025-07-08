@@ -1,15 +1,5 @@
-// import React from 'react'
-// import { CartItems } from '../components/CartItems/CartItems'
-
-// export const Cart = () => {
-//   return (
-//     <div>
-//       <CartItems/>
-//     </div>
-//   )
-// }
 import React from 'react';
-import CartItems from '../components/CartItems/CartItems';  // ✅ Remove curly braces
+import CartItems from '../components/CartItems/CartItems';  
 
 const Cart = () => {
   return (
@@ -19,5 +9,5 @@ const Cart = () => {
   );
 };
 
-export default Cart;  // ✅ Export as default
+export default Cart;  
 

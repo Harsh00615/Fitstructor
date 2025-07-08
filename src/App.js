@@ -1,59 +1,21 @@
-// import './App.css';
-// import Footer from './components/Footer/Footer';
-// import { Navbar } from './components/Navbar/Navbar';
-// import Home from './pages/CSS/Home';
-// import Shopp from './Shopp';
-
-
-
-// function App() {
-//   return (
-//     <>
-//      <Navbar/>
-//      <Home/>
-//      <Shopp/>
-//      <Footer/>
-//     </>
-//   );
-// }
-
-// export default App;
-// import './App.css';
-// import Footer from './components/Footer/Footer';
-// import { Navbar } from './components/Navbar/Navbar';
-// import Home from './pages/CSS/Home';
-// import Shopp from './Shopp';
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Home />
-//       <Shopp />   {/* ✅ No need for BrowserRouter here */}
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default App;
 import './App.css';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/CSS/Home';
-import Shopp from './Shopp';
 import { Routes, Route } from 'react-router-dom';
+import Home from './pages/CSS/Home';
+import Footer from './components/Footer/Footer';
+import MainLayout from './MainLayout';
+import Shopp from './Shopp';
 
 function App() {
   return (
     <>
-      <Navbar />
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shopp />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+        </Route>
+
+        <Route path="/shop/*" element={<Shopp />} />
       </Routes>
 
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import "../CartItems/CartItems.css";
-import { ShopContext } from '../../Context/ShopContextProvider';
+import  {ShopContext}  from '../../Context/ShopContextProvider';
 import cart_cross_icon from "../Assets/cart_cross_icon.png";
 import RelatedProduct from '../RelatedProducts/RelatedProduct';  // ✅ Fixed import (no { })
 

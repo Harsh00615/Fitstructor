@@ -48,16 +48,18 @@ const Navbar = () => {
       <ul className='nav-logo-menu'>
         <li>Fitness<hr/></li>
         <li>Fit+<hr/></li>
-        <li>Store<hr/></li>
+        <Link to="/shop" style={{ textDecoration: "none", color: "inherit" }}>
+            Store<hr/>
+          </Link>
       </ul>
 
       <div className="nav-login-cart">
         <img src={user} alt="user" />
         
-        <Link to="/shop" style={{ textDecoration: "none", position: "relative" }}>
+        {/* <Link to="/shop" style={{ textDecoration: "none", position: "relative" }}>
           <img src={cart} alt="Shopping cart" />
           <div className='nav-cart-count'>0</div>
-        </Link>
+        </Link> */}
 
       </div>
     </div>
