@@ -10,6 +10,7 @@
     background: #191535;
     gap:30px;
     margin-bottom: 150px;
+    border: solid 1px white;
 }
 .newsLetter h1 {
     color:White;
