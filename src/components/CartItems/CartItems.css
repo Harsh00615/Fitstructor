@@ -12,7 +12,7 @@
     align-items: center;
     gap:60px;
     padding: 20px 0px;
-    color: #454545;
+    color:white;
     font-size: 16px;
     font-weight: 600;
 }
@@ -68,7 +68,7 @@
     padding-left: 150px;
 }
 .CartItems-promoCode p {
-    color:#555;
+    color:#ff5a5a;
 }
 .CartItem-promoBox {
     height:58px;
