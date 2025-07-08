@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import "../CartItems/CartItems.css";
 import  {ShopContext}  from '../../Context/ShopContextProvider';
 import cart_cross_icon from "../Assets/cart_cross_icon.png";
-import RelatedProduct from '../RelatedProducts/RelatedProduct';  // ✅ Fixed import (no { })
+import RelatedProduct from '../RelatedProducts/RelatedProduct';  
 
 const CartItems = () => {
   const { all_product, cartItems, RemoveFromCart, AddToCart, gettotalAmount } = useContext(ShopContext);
@@ -13,7 +13,7 @@ const CartItems = () => {
         <div className="cartItems-main-Format">
           <p>Product</p>
           <p>Title</p>
-          <p>Price</p>        {/* ✅ Fixed typo: Prize → Price */}
+          <p>Price</p>        
           <p>Quantity</p>
           <p>Total</p>
           <p>Remove</p>
@@ -23,7 +23,7 @@ const CartItems = () => {
         {all_product.map((e) => {
           if (cartItems[e.id] > 0) {
             return (
-              <div key={e.id}>  {/* ✅ Added key to parent div */}
+              <div key={e.id}>  
                 <div className="cartItems-format cartItems-main-Format">
                   <img src={e.image} alt="" className='cartIcon-product-icon' />
                   <p>{e.name}</p>
