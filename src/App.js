@@ -7,6 +7,8 @@ import { EmailVerify } from './pages/EmailVerify';
 import { ResetPassword } from './pages/ResetPassword';
 import { Login } from './pages/Login';
 import { ToastContainer } from 'react-toastify';
+import MainLayout from './MainLayout';
+import Shopp from './Shopp';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path='/Login' element={<Login/>}/>
         <Route path='/EmailVerify' element={<EmailVerify/>}/>
         <Route path='/ResetPassword' element={<ResetPassword/>}/>
+         <Route path="/shop/*" element={<Shopp />} />
     </Routes>
      </BrowserRouter>
     </>
@@ -25,3 +28,4 @@ function App() {
 }
 
 export default App;
+

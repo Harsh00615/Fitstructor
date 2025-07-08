@@ -8,7 +8,7 @@ import { AppContent } from '../../context/AppContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-export const Navbar = () => {
+ const Navbar = () => {
   const {userData , backendUrl , setUserData , setIsLoggedIn} = useContext(AppContent)
   const navigate = useNavigate();
 
@@ -46,13 +46,15 @@ export const Navbar = () => {
   return (
     <div className='Navbar'>
         <div className="navbar-logo">
-            <img alt="logo" src = {logo}/>
+            <img onClick={() => navigate('/')} alt="logo" src = {logo}/>
             <p>FitStructor</p>
         </div>
         <ul className='nav-logo-menu'>
            <li>Fitness<hr/></li>
            <li>Fit+<hr/></li>
-           <li>Store<hr/></li>
+           <Link to="/shop" style={{ textDecoration: "none", color: "inherit" }}>
+            Store<hr/>
+          </Link>
         </ul>
         <div className="nav-login-cart">
 
@@ -72,3 +74,4 @@ export const Navbar = () => {
   )
 }
  
+export default Navbar
