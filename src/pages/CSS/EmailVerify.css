@@ -1,0 +1,90 @@
+/* emailVerify.css */
+  .otp-container {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #1e0032, #1a023d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .otp-form {
+    background-color: #1b0735;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .otp-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .otp-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .otp-form input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #2e0a52;
+    color: #fff;
+    outline: none;
+  }
+  
+  .otp-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .otp-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4567;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .otp-form button:hover {
+    background-color: #ff234d;
+  }
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs input {
+    width: 45px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background: #2d1049;
+    color: white;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .otp-inputs input:focus {
+    background: #3a1361;
+    box-shadow: 0 0 5px #ff4567;
+  }
+  
+  

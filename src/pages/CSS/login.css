@@ -1,0 +1,142 @@
+/* Base container
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to bottom right, #1a103d, #2e1a58);
+  }
+  
+   Form box 
+  .login-form {
+    background-color: #1f123c;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+   Title 
+  .login-title {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  Input fields 
+  .login-form input {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e1a58;
+    color: #fff;
+    outline: none;
+  }
+  
+  .login-form input::placeholder {
+    color: #aaa;
+  }
+  
+   Button 
+  .login-form button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff4c60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background(0.3s ease);
+  }
+  
+  .login-form button:hover {
+    background: #e63a4f;
+  }
+  
+   Footer 
+  .login-footer {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .login-footer a {
+    color: #ff4c60;
+    text-decoration: none;
+  }
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+   */
+   .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to bottom right, #1a103d, #2e1a58);
+  }
+  
+  .auth-form {
+    background-color: #1f123c;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .auth-title {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-form input {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e1a58;
+    color: #fff;
+    outline: none;
+  }
+  
+  .auth-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .auth-form button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: #ff4c60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    background: #e63a4f;
+  }
+  
+  .auth-footer {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .auth-footer span {
+    color: #ff4c60;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
