@@ -8,7 +8,10 @@ import { ResetPassword } from './pages/ResetPassword';
 import { Login } from './pages/Login';
 import { ToastContainer } from 'react-toastify';
 import MainLayout from './MainLayout';
-import Shopp from './Shopp';
+import Shopp from './shopp';
+import Diet from "./pages/Diet";
+import Recovery from "./pages/Recovery";
+import Physiotherapist from "./components/RecoveryHub/Physiotherapist";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path='/EmailVerify' element={<EmailVerify/>}/>
         <Route path='/ResetPassword' element={<ResetPassword/>}/>
          <Route path="/shop/*" element={<Shopp />} />
+         <Route path="/diet" element={<Diet />} />
+          <Route path="/recovery" element={<Recovery />} />
+          <Route path="/physiotherapist" element={<Physiotherapist />} />
     </Routes>
      </BrowserRouter>
     </>

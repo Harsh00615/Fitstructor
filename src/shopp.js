@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Cart from './pages/Cart';
 import Product from './pages/product';
 import ShopCategory from './pages/ShopCategory';
-import ShopContextProvider from '../src/context/ShopContextProvider';
+import ShopContextProvider from './context/ShopContextProvider';
 import Shop from './pages/Shop';
 
 function Shopp() {

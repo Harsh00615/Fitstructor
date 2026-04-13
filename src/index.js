@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Shopp from './Shopp';
+import Shopp from './shopp';
 import ShopContextProvider from '../src/context/ShopContextProvider';  
 import reportWebVitals from './reportWebVitals';
 import AppContextProvider from './context/AppContext';
