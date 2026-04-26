@@ -40,19 +40,30 @@ export const ImgComponent = () => {
 
         {/* CENTER CARD */}
         <div className="card large">
+          <div className="card"
+            onClick={() => navigate("/fitplus")}
+            style={{ cursor: "pointer" }}
+          >
           <img src={exclusive} alt="Exclusive" />
           <h2>One pass for all your FITNESS needs</h2>
+          </div>
         </div>
 
         {/* RIGHT COLUMN */}
         <div className="column right">
-          <div className="card">
+          <div className="card"
+            onClick={() => navigate("/expert")}
+            style={{ cursor: "pointer" }}
+          >
             <img src={gym} alt="Gym" />
             <h2>EXPERT COACHES</h2>
             <p><strong>For guided sessions</strong></p>
           </div>
 
-          <div className="card">
+          <div className="card"
+            onClick={() => navigate("/fitness")}
+            style={{ cursor: "pointer" }}
+          >
             <img src={wellbeing} alt="Wellbeing" />
             <h2>FITNESS MOTIVATION</h2>
             <p><strong>Providing bonus points, rewards, gifts</strong></p>

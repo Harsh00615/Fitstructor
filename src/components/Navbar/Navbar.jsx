@@ -47,11 +47,16 @@ import { toast } from 'react-toastify';
     <div className='Navbar'>
         <div className="navbar-logo">
             <img onClick={() => navigate('/')} alt="logo" src = {logo}/>
-            <p>FitStructor</p>
+            <p onClick={() => navigate('/')}>FitStructor</p>
         </div>
         <ul className='nav-logo-menu'>
-           <li>Fitness<hr/></li>
-           <li>Fit+<hr/></li>
+           <Link to="/expert" style={{ textDecoration: "none", color: "inherit" }}>
+            Fitness<hr/>
+          </Link>
+           {/* <li>Fit+<hr/></li> */}
+           <Link to="/fitplus" style={{ textDecoration: "none", color: "inherit" }}>
+            Fit+<hr/>
+          </Link>
            <Link to="/shop" style={{ textDecoration: "none", color: "inherit" }}>
             Store<hr/>
           </Link>

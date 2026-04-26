@@ -12,6 +12,9 @@ import Shopp from './shopp';
 import Diet from "./pages/Diet";
 import Recovery from "./pages/Recovery";
 import Physiotherapist from "./components/RecoveryHub/Physiotherapist";
+import Fitness from "./pages/Fitness";
+import Fitplus from "./pages/Fitplus"
+import ExpertCoaches from "./pages/ExpertCoaches";
 
 function App() {
   return (
@@ -27,6 +30,11 @@ function App() {
          <Route path="/diet" element={<Diet />} />
           <Route path="/recovery" element={<Recovery />} />
           <Route path="/physiotherapist" element={<Physiotherapist />} />
+          <Route path="/fitness" element={<Fitness />} />
+          <Route path="/fitplus" element={<Fitplus />} />
+          <Route path="/expert" element={<ExpertCoaches/>} />
+          
+
     </Routes>
      </BrowserRouter>
     </>
