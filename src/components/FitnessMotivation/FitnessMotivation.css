@@ -1,0 +1,442 @@
+/* ================= PAGE ================= */
+.fitness-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fitness-wrapper > div {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* ================= HEADER ================= */
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+}
+
+.date {
+  text-align: center;
+  opacity: 0.85;
+  margin-bottom: 22px;
+}
+
+/* ================= STATS ================= */
+.stats {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.stats > div {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 14px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.stats > div:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.stats span {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.3rem;
+  color: #ff2e2e;
+  font-weight: bold;
+}
+
+/* ================= MONTHLY ================= */
+.monthly {
+  margin-bottom: 28px;
+}
+
+.monthly h2 {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ff2e2e;
+  transition: width 0.4s ease;
+}
+
+/* ================= TASKS ================= */
+/* ================= TASKS MODERN ================= */
+.task-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 26px; /* 👈 NEW GAP before add-task */
+}
+
+/* CARD */
+.task-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 16px 18px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  position: relative;
+}
+
+.task-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.task-card.done {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+
+/* CONTENT */
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.task-title {
+  font-size: 1.05rem;
+}
+
+.task-points {
+  margin-left: auto;
+  color: #ff2e2e;
+  font-weight: bold;
+}
+
+/* EDIT INPUT */
+.task-edit-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.05rem;
+  outline: none;
+}
+
+/* 3 DOTS */
+.task-menu-wrapper {
+  position: relative;
+}
+
+.dots-btn {
+  font-size: 1.4rem;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dots-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}/* RIGHT ACTIONS */
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative; /* anchor for menu */
+}
+
+/* MENU – FLOATING CORNER */
+.task-menu {
+  position: absolute;
+  top: 50%;
+  right: -10px;              /* 👈 pushes menu to right side */
+  transform: translateY(-50%);
+  background: #1c1a3a;
+  border-radius: 14px;
+  padding: 6px;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  z-index: 9999;
+  animation: menuPop 0.2s ease;
+}
+
+/* MENU BUTTONS */
+.task-menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.task-menu button:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.task-menu .danger {
+  color: #ff4d4d;
+}
+
+/* MENU ANIMATION */
+@keyframes menuPop {
+  from {
+    opacity: 0;
+    transform: translateX(6px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.task-actions {
+  position: relative; /* REQUIRED */
+}
+/* ================= ADD TASK ================= */
+.add-task {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;     /* 👈 separates from tasks */
+  padding-top: 14px;    /* 👈 subtle separation */
+  border-top: 1px solid rgba(255,255,255,0.12); /* 👈 optional divider */
+}
+
+.add-task input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.add-task button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #ff2e2e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ================= FINISH ================= */
+.finish-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  background: #ff2e2e;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ================= POPUP ================= */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: linear-gradient(135deg, #0f0c29, #302b63);
+  padding: 26px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  animation: pop 0.25s ease;
+}
+
+.popup h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.popup ul {
+  padding-left: 18px;
+}
+
+.popup li {
+  margin-bottom: 8px;
+}
+
+.popup p {
+  margin-bottom: 8px;
+}
+
+.close-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #ff2e2e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes pop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* CONTAINER */
+.fitness-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* STAT CARDS */
+.stat-card {
+  flex: 1;
+  background: rgba(255,255,255,0.12);
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
+
+.stat-card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.4rem;
+  color: #ff2e2e;
+  font-weight: bold;
+}
+
+/* GRID LAYOUT */
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* TASK INNER LAYOUT */
+.task-left {
+  flex: 1;
+}
+
+.task-left input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* RIGHT SIDE */
+.task-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.task-right .points {
+  color: #ff2e2e;
+  font-weight: bold;
+}
+
+/* 3 DOTS */
+.dots {
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+/* MENU */
+.task-menu {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  background: #1c1a3a;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 20;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.task-menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.task-menu button:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.task-menu .danger {
+  color: #ff4d4d;
+}.popup {
+  position: relative; /* REQUIRED */
+}
+
+.popup-back {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.popup-back:hover {
+  opacity: 0.7;
+}

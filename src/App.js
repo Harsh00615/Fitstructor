@@ -8,8 +8,14 @@ import { ResetPassword } from './pages/ResetPassword';
 import { Login } from './pages/Login';
 import { ToastContainer } from 'react-toastify';
 import MainLayout from './MainLayout';
-import Shopp from './Shopp';
-
+import Shopp from './shopp';
+import Diet from "./pages/Diet";
+import Recovery from "./pages/Recovery";
+import Physiotherapist from "./components/RecoveryHub/Physiotherapist";
+import Fitness from "./pages/Fitness";
+import Fitplus from "./pages/Fitplus"
+import ExpertCoaches from "./pages/ExpertCoaches";
+import AiButton from "./pages/CSS/AiButton.jsx";
 function App() {
   return (
     <>
@@ -21,7 +27,16 @@ function App() {
         <Route path='/EmailVerify' element={<EmailVerify/>}/>
         <Route path='/ResetPassword' element={<ResetPassword/>}/>
          <Route path="/shop/*" element={<Shopp />} />
+         <Route path="/diet" element={<Diet />} />
+          <Route path="/recovery" element={<Recovery />} />
+          <Route path="/physiotherapist" element={<Physiotherapist />} />
+          <Route path="/fitness" element={<Fitness />} />
+          <Route path="/fitplus" element={<Fitplus />} />
+          <Route path="/expert" element={<ExpertCoaches/>} />
+          
+
     </Routes>
+    <AiButton />
      </BrowserRouter>
     </>
   );
