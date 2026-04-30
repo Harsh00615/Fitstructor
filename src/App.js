@@ -15,7 +15,7 @@ import Physiotherapist from "./components/RecoveryHub/Physiotherapist";
 import Fitness from "./pages/Fitness";
 import Fitplus from "./pages/Fitplus"
 import ExpertCoaches from "./pages/ExpertCoaches";
-
+import AiButton from "./pages/CSS/AiButton.jsx";
 function App() {
   return (
     <>
@@ -36,6 +36,7 @@ function App() {
           
 
     </Routes>
+    <AiButton />
      </BrowserRouter>
     </>
   );
